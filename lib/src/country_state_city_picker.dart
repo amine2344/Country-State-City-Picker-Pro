@@ -82,9 +82,9 @@ class _CountryStateCityPickerState extends State<CountryStateCityPicker> {
             _showDialog(context);
           },
           decoration: widget.textFieldDecoration == null
-              ? defaultDecoration.copyWith(hintText: 'Select country'.tr())
+              ? defaultDecoration.copyWith(hintText: 'Select country')
               : widget.textFieldDecoration
-                  ?.copyWith(hintText: 'Select country'.tr()),
+                  ?.copyWith(hintText: 'Select country'),
           readOnly: true,
         ),
         const SizedBox(height: 8.0),
@@ -97,12 +97,12 @@ class _CountryStateCityPickerState extends State<CountryStateCityPicker> {
             if (widget.country.text.isNotEmpty) {
               _showDialog(context);
             } else {
-              _showSnackBar('Select Country'.tr());
+              _showSnackBar('Select Country');
             }
           },
           decoration: widget.textFieldDecoration == null
-              ? defaultDecoration.copyWith(hintText: 'Select city'.tr())
-              : widget.textFieldDecoration?.copyWith(hintText: 'Select city'.tr()),
+              ? defaultDecoration.copyWith(hintText: 'Select city')
+              : widget.textFieldDecoration?.copyWith(hintText: 'Select city'),
           readOnly: true,
         ),
       ],
@@ -237,7 +237,7 @@ class _CountryStateCityPickerState extends State<CountryStateCityPicker> {
                           controller2.clear();
                           Navigator.pop(context);
                         },
-                        child: Text('Close'.tr()),
+                        child: Text('Close'),
                       )
                     ],
                   ),
